@@ -21,7 +21,7 @@ jobs:
           dir: ./hw
           board: ./hw/EM-Template.kicad_pcb
           schema: ./hw/EM-Template.kicad_sch
-          
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
