@@ -1,0 +1,27 @@
+name: HW action
+
+on:
+  push:
+    paths:
+      - 'hw/**'
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Kibot
+        uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: ./hw/.kibot.yaml
+          board: ./hw/EM-Template.kicad_pcb
+          schema: ./hw/EM-Template.kicad_sch
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: HW-artifacts
+          path: |
+            hw/doc
+            hw/bom
+            hw/fab

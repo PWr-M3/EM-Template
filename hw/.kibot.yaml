@@ -1,0 +1,20 @@
+kibot:
+  version: 1
+
+import:
+  - file: JLCPCB_stencil
+    definitions:
+      _KIBOT_IMPORT_DIR: fab/jlcpcb
+      _KIBOT_POS_ENABLED: false
+      _KIBOT_BOM_ENABLED: false
+  - file: PCBWay_stencil
+    definitions:
+      _KIBOT_IMPORT_DIR: fab/pcbway
+      
+outputs:
+  - name: Generate Schematic
+    type: pdf_sch_print
+    dir: doc
+  - name: Generate ibom
+    type: ibom
+    dir: bom
