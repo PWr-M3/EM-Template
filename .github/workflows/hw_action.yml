@@ -21,7 +21,18 @@ jobs:
           dir: ./hw
           board: ./hw/EM-Template.kicad_pcb
           schema: ./hw/EM-Template.kicad_sch
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: HW-kibot
+          path: |
+            hw/doc
+            hw/bom
+            hw/fab
 
+  mems:
+    runs-on: ubuntu-latest
+    steps:
       - name: Setup python
         uses: actions/setup-python@v5
         with:
@@ -41,7 +52,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: HW-artifacts
+          name: HW-mems
           path: |
             hw/doc
             hw/bom
