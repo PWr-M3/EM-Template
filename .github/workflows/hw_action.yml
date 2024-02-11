@@ -15,6 +15,7 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_k7
         with:
           config: ./hw/.kibot.yaml
+          dir: ./hw
           board: ./hw/EM-Template.kicad_pcb
           schema: ./hw/EM-Template.kicad_sch
       - name: Upload artifacts
