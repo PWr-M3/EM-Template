@@ -1,10 +1,11 @@
 name: HW action
 
 on:
+  workflow_dispatch:
   push:
     paths:
-      - 'hw**'
-      - '.github'
+      - 'hw/**'
+      - '.github/**'
 
 jobs:
   kibot:
