@@ -11,6 +11,11 @@ import:
     definitions:
       _KIBOT_IMPORT_DIR: fab/pcbway
       
+preflight:
+  set_text_variables:
+    - name: "SHA"
+      command: git rev-parse --short "$GITHUB_SHA"
+
 outputs:
   - name: Generate Schematic
     type: pdf_sch_print
