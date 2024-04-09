@@ -48,6 +48,8 @@ jobs:
           version: '7.0'
 
       - name: Run `mems bom`
+        env:
+          MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
         run: |
           pip install git+https://github.com/PWr-M3/MEMS-scripts.git
           cd ./hw
