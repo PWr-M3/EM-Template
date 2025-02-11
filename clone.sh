@@ -14,6 +14,7 @@ done' sh {} +
 git remote rename origin ci-fork
 
 rm ./README.md
+rm ./clone.sh
 
 git add .
 git commit -m "Rename project to ${NEW_NAME_VAR}"
