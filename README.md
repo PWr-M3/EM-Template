@@ -2,6 +2,11 @@
 EM-Template is a ... module that is compatible with EuroMeasure system.
 This repository contains [hardware](/hw), [software](/soft), and [documentation](/docs) as well as a CI flow used to generate fabrication and documentation outputs.
 
+## Usage, simplified, limited - with script
+Create a new repository in the PWr-M3 organisation
+run setup.sh
+you will be prompted for repository name (just name, not git url)
+repository will be cloned and prepared in the parent directory of EM-Template
 
 ## Usage, create a new repository
 To use the template run following commands. REMEMBER TO REPLACE "NEW_NAME" AND TO UPDATE README.
