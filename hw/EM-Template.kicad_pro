@@ -646,7 +646,10 @@
   ],
   "text_variables": {
     "date": "0000-00-00",
+    "desc1": "Description line 1",
+    "desc2": "DEscription line 2",
     "rev": "0.0",
-    "sha": "DEADBEEF"
+    "sha": "0000000",
+    "title": "TITLE"
   }
 }

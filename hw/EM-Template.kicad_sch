@@ -5,11 +5,13 @@
 	(uuid "c85b3f52-0604-4fe3-848f-7f7934056d20")
 	(paper "A3")
 	(title_block
-		(title "EM-Template")
+		(title "${title}")
 		(date "${date}")
 		(rev "${rev}")
 		(company "Dolvac Instruments")
 		(comment 1 "SHA: ${sha}")
+		(comment 2 "${desc2}")
+		(comment 3 "${desc1}")
 	)
 	(lib_symbols)
 	(sheet_instances
